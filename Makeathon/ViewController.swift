@@ -11,6 +11,8 @@ import Firebase
 import FirebaseDatabase
 import EstimoteProximitySDK
 
+//The ViewController class is a single page instance that handles user events
+//when entering/leaving the area and then update the client's view and database accordingly.
 class ViewController: UIViewController{
 
     //Reference to the firebase database
@@ -19,9 +21,15 @@ class ViewController: UIViewController{
     //UI element for the text prompt
     @IBOutlet weak var namePrompt: UILabel!
 
+    //UI element representing the green beacon named 'mint'
     @IBOutlet weak var greenLabel: UILabel!
+    
+    //UI element representing the blue beacon named 'ice'
     @IBOutlet weak var blueLabel: UILabel!
+    
+    //UI element representing the purple beacon named 'blueberry'
     @IBOutlet weak var purpleLabel: UILabel!
+    
     //self.ref!.child("users").setValue(["username": userName])
     
     //Hardcoded beacon uuid's
@@ -33,7 +41,7 @@ class ViewController: UIViewController{
     
     let blueberryColor = UIColor(red:  36/255.0, green:  24/255.0, blue:  93/255.0, alpha: 1.0)
     
-    let blue = UIColor.blue
+    let iceColor = UIColor(red: 153/255.0, green: 1, blue: 1, alpha: 1.0)
     
     var proximityObserver: EPXProximityObserver!
     
@@ -83,13 +91,13 @@ class ViewController: UIViewController{
                                          attachmentValue: "ice")
         blueZone.onEnterAction = { attachment in
             print("Enter blue (close range)")
-            self.greenLabel.backgroundColor = self.blue
+            self.greenLabel.backgroundColor = self.iceColor
             self.greenLabel.textColor = UIColor.white
         }
         blueZone.onExitAction = { attachment in
             print("Exit blue (close range)")
             self.greenLabel.backgroundColor = UIColor.white
-            self.greenLabel.textColor = self.blue
+            self.greenLabel.textColor = self.iceColor
         }
         
         //Used to log proximity beacons in close range
@@ -130,29 +138,33 @@ class ViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
 
+    //Conduct the inital setup for the UI elements representing the beacons
     func labelSetup() {
-        namePrompt.layer.borderWidth = 2.0
-        namePrompt.layer.borderColor = mintColor
-        namePrompt.layer.cornerRadius = 8
-        namePrompt.layer.masksToBounds = true
+        self.namePrompt.layer.borderWidth = 2.0
+        self.namePrompt.layer.borderColor = self.mintColor
+        self.namePrompt.layer.cornerRadius = 8
+        self.namePrompt.layer.masksToBounds = true
         
-        purpleLabel.layer.borderWidth = 2.0
-        purpleLabel.layer.borderColor = blueberry
-        purpleLabel.layer.cornerRadius = 10
-        purpleLabel.layer.masksToBounds = true
-        purpleLabel.backgroundColor = UIColor.white
+        self.purpleLabel.layer.borderWidth = 2.0
+        self.purpleLabel.layer.borderColor = self.blueberryColor
+        self.purpleLabel.layer.cornerRadius = 10
+        self.purpleLabel.layer.masksToBounds = true
+        self.purpleLabel.textColor = self.blueberryColor
+        self.purpleLabel.backgroundColor = UIColor.white
         
-        blueLabel.layer.borderWidth = 2.0
-        blueLabel.layer.borderColor = blue
-        blueLabel.layer.cornerRadius = 10
-        blueLabel.layer.masksToBounds = true
-        blueLabel.backgroundColor = UIColor.white
+        self.blueLabel.layer.borderWidth = 2.0
+        self.blueLabel.layer.borderColor = self.iceColor
+        self.blueLabel.layer.cornerRadius = 10
+        self.blueLabel.layer.masksToBounds = true
+        self.blueLabel.textColor = self.iceColor
+        self.blueLabel.backgroundColor = UIColor.white
         
-        greenLabel.layer.borderWidth = 2.0
-        greenLabel.layer.borderColor = mintColor
-        greenLabel.layer.cornerRadius = 10
-        greenLabel.layer.masksToBounds = true
-        greenLabel.backgroundColor = UIColor.white
+        self.greenLabel.layer.borderWidth = 2.0
+        self.greenLabel.layer.borderColor = self.mintColor
+        self.greenLabel.layer.cornerRadius = 10
+        self.greenLabel.layer.masksToBounds = true
+        self.greenLabel.textColor = self.mintColor
+        self.greenLabel.backgroundColor = UIColor.white
         
     }
 
