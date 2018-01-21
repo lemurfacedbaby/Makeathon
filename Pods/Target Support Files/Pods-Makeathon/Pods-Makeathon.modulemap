@@ -1,0 +1,6 @@
+framework module Pods_Makeathon {
+  umbrella header "Pods-Makeathon-umbrella.h"
+
+  export *
+  module * { export * }
+}

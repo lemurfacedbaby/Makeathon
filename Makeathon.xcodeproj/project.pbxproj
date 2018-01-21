@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50D978B594210318884E0EF8 /* Pods_MakeathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B65E02380EF78084767BBB5 /* Pods_MakeathonUITests.framework */; };
+		B980FE0220144EDC00FBFC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980FE0120144EDC00FBFC59 /* AppDelegate.swift */; };
+		B980FE0420144EDC00FBFC59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980FE0320144EDC00FBFC59 /* ViewController.swift */; };
+		B980FE0720144EDC00FBFC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B980FE0520144EDC00FBFC59 /* Main.storyboard */; };
+		B980FE0920144EDC00FBFC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B980FE0820144EDC00FBFC59 /* Assets.xcassets */; };
+		B980FE0C20144EDC00FBFC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B980FE0A20144EDC00FBFC59 /* LaunchScreen.storyboard */; };
+		B980FE1720144EDC00FBFC59 /* MakeathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980FE1620144EDC00FBFC59 /* MakeathonTests.swift */; };
+		B980FE2220144EDC00FBFC59 /* MakeathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980FE2120144EDC00FBFC59 /* MakeathonUITests.swift */; };
+		B980FE33201465BF00FBFC59 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B980FE32201465BF00FBFC59 /* EstimoteSDK.framework */; };
+		B980FE352014F1D200FBFC59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B980FE342014F1D200FBFC59 /* GoogleService-Info.plist */; };
+		CB37C3191D65B7AE865108B1 /* Pods_Makeathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACBD628172E0964042118B5E /* Pods_Makeathon.framework */; };
+		E518325814B31DAAC54238FE /* Pods_MakeathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6118B0148081B0202AD7D5 /* Pods_MakeathonTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B980FE1320144EDC00FBFC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B980FDF620144EDC00FBFC59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B980FDFD20144EDC00FBFC59;
+			remoteInfo = Makeathon;
+		};
+		B980FE1E20144EDC00FBFC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B980FDF620144EDC00FBFC59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B980FDFD20144EDC00FBFC59;
+			remoteInfo = Makeathon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BD04D4595F129DBB792AC00 /* Pods-Makeathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makeathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makeathon/Pods-Makeathon.debug.xcconfig"; sourceTree = "<group>"; };
+		582EE9B21071CEC080825B8C /* Pods-MakeathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeathonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MakeathonTests/Pods-MakeathonTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B65E02380EF78084767BBB5 /* Pods_MakeathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		932C557E39ED769440C520D2 /* Pods-MakeathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MakeathonTests/Pods-MakeathonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACBD628172E0964042118B5E /* Pods_Makeathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makeathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B980FDFE20144EDC00FBFC59 /* Makeathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makeathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B980FE0120144EDC00FBFC59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B980FE0320144EDC00FBFC59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B980FE0620144EDC00FBFC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B980FE0820144EDC00FBFC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B980FE0B20144EDC00FBFC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B980FE0D20144EDC00FBFC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B980FE1220144EDC00FBFC59 /* MakeathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B980FE1620144EDC00FBFC59 /* MakeathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeathonTests.swift; sourceTree = "<group>"; };
+		B980FE1820144EDC00FBFC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B980FE1D20144EDC00FBFC59 /* MakeathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B980FE2120144EDC00FBFC59 /* MakeathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeathonUITests.swift; sourceTree = "<group>"; };
+		B980FE2320144EDC00FBFC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B980FE2F2014637900FBFC59 /* Makeathon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Makeathon-Bridging-Header.h"; sourceTree = "<group>"; };
+		B980FE32201465BF00FBFC59 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteSDK.framework; path = Pods/EstimoteSDK/EstimoteSDK/EstimoteSDK.framework; sourceTree = "<group>"; };
+		B980FE342014F1D200FBFC59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BCA43E0BB49AA505A281ADFA /* Pods-MakeathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeathonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MakeathonUITests/Pods-MakeathonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D6A988D9C7424A256B33A77C /* Pods-Makeathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makeathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makeathon/Pods-Makeathon.release.xcconfig"; sourceTree = "<group>"; };
+		D78685E2C780D54E4D670C99 /* Pods-MakeathonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeathonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MakeathonUITests/Pods-MakeathonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6118B0148081B0202AD7D5 /* Pods_MakeathonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeathonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B980FDFB20144EDC00FBFC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B980FE33201465BF00FBFC59 /* EstimoteSDK.framework in Frameworks */,
+				CB37C3191D65B7AE865108B1 /* Pods_Makeathon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B980FE0F20144EDC00FBFC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E518325814B31DAAC54238FE /* Pods_MakeathonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B980FE1A20144EDC00FBFC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D978B594210318884E0EF8 /* Pods_MakeathonUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B980FDF520144EDC00FBFC59 = {
+			isa = PBXGroup;
+			children = (
+				B980FE342014F1D200FBFC59 /* GoogleService-Info.plist */,
+				B980FE0020144EDC00FBFC59 /* Makeathon */,
+				B980FE1520144EDC00FBFC59 /* MakeathonTests */,
+				B980FE2020144EDC00FBFC59 /* MakeathonUITests */,
+				B980FDFF20144EDC00FBFC59 /* Products */,
+				B99605773DDDF34E71F62B72 /* Pods */,
+				FF4148B808901E084F7BDE74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B980FDFF20144EDC00FBFC59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B980FDFE20144EDC00FBFC59 /* Makeathon.app */,
+				B980FE1220144EDC00FBFC59 /* MakeathonTests.xctest */,
+				B980FE1D20144EDC00FBFC59 /* MakeathonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B980FE0020144EDC00FBFC59 /* Makeathon */ = {
+			isa = PBXGroup;
+			children = (
+				B980FE0120144EDC00FBFC59 /* AppDelegate.swift */,
+				B980FE0320144EDC00FBFC59 /* ViewController.swift */,
+				B980FE0520144EDC00FBFC59 /* Main.storyboard */,
+				B980FE0820144EDC00FBFC59 /* Assets.xcassets */,
+				B980FE0A20144EDC00FBFC59 /* LaunchScreen.storyboard */,
+				B980FE0D20144EDC00FBFC59 /* Info.plist */,
+				B980FE2F2014637900FBFC59 /* Makeathon-Bridging-Header.h */,
+			);
+			path = Makeathon;
+			sourceTree = "<group>";
+		};
+		B980FE1520144EDC00FBFC59 /* MakeathonTests */ = {
+			isa = PBXGroup;
+			children = (
+				B980FE1620144EDC00FBFC59 /* MakeathonTests.swift */,
+				B980FE1820144EDC00FBFC59 /* Info.plist */,
+			);
+			path = MakeathonTests;
+			sourceTree = "<group>";
+		};
+		B980FE2020144EDC00FBFC59 /* MakeathonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B980FE2120144EDC00FBFC59 /* MakeathonUITests.swift */,
+				B980FE2320144EDC00FBFC59 /* Info.plist */,
+			);
+			path = MakeathonUITests;
+			sourceTree = "<group>";
+		};
+		B99605773DDDF34E71F62B72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BD04D4595F129DBB792AC00 /* Pods-Makeathon.debug.xcconfig */,
+				D6A988D9C7424A256B33A77C /* Pods-Makeathon.release.xcconfig */,
+				932C557E39ED769440C520D2 /* Pods-MakeathonTests.debug.xcconfig */,
+				582EE9B21071CEC080825B8C /* Pods-MakeathonTests.release.xcconfig */,
+				D78685E2C780D54E4D670C99 /* Pods-MakeathonUITests.debug.xcconfig */,
+				BCA43E0BB49AA505A281ADFA /* Pods-MakeathonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF4148B808901E084F7BDE74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B980FE32201465BF00FBFC59 /* EstimoteSDK.framework */,
+				ACBD628172E0964042118B5E /* Pods_Makeathon.framework */,
+				EB6118B0148081B0202AD7D5 /* Pods_MakeathonTests.framework */,
+				8B65E02380EF78084767BBB5 /* Pods_MakeathonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B980FDFD20144EDC00FBFC59 /* Makeathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B980FE2620144EDC00FBFC59 /* Build configuration list for PBXNativeTarget "Makeathon" */;
+			buildPhases = (
+				42370E3FFF518514D9145107 /* [CP] Check Pods Manifest.lock */,
+				B980FDFA20144EDC00FBFC59 /* Sources */,
+				B980FDFB20144EDC00FBFC59 /* Frameworks */,
+				B980FDFC20144EDC00FBFC59 /* Resources */,
+				760F48E3DC033C19B3445F48 /* [CP] Embed Pods Frameworks */,
+				F331485DE9758D271EF4A2D9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Makeathon;
+			productName = Makeathon;
+			productReference = B980FDFE20144EDC00FBFC59 /* Makeathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B980FE1120144EDC00FBFC59 /* MakeathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B980FE2920144EDC00FBFC59 /* Build configuration list for PBXNativeTarget "MakeathonTests" */;
+			buildPhases = (
+				B446D7DDA94968701EEC547C /* [CP] Check Pods Manifest.lock */,
+				B980FE0E20144EDC00FBFC59 /* Sources */,
+				B980FE0F20144EDC00FBFC59 /* Frameworks */,
+				B980FE1020144EDC00FBFC59 /* Resources */,
+				7CF4DE96741DB1FDBC992C9F /* [CP] Embed Pods Frameworks */,
+				A31ECCE27A669B0ECA65D818 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B980FE1420144EDC00FBFC59 /* PBXTargetDependency */,
+			);
+			name = MakeathonTests;
+			productName = MakeathonTests;
+			productReference = B980FE1220144EDC00FBFC59 /* MakeathonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B980FE1C20144EDC00FBFC59 /* MakeathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B980FE2C20144EDC00FBFC59 /* Build configuration list for PBXNativeTarget "MakeathonUITests" */;
+			buildPhases = (
+				5F83ACD33A8F40ED8AD8F6AF /* [CP] Check Pods Manifest.lock */,
+				B980FE1920144EDC00FBFC59 /* Sources */,
+				B980FE1A20144EDC00FBFC59 /* Frameworks */,
+				B980FE1B20144EDC00FBFC59 /* Resources */,
+				7E488FB9A51DC5F23CAA1E82 /* [CP] Embed Pods Frameworks */,
+				A22E642C6D214AC6FD398C22 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B980FE1F20144EDC00FBFC59 /* PBXTargetDependency */,
+			);
+			name = MakeathonUITests;
+			productName = MakeathonUITests;
+			productReference = B980FE1D20144EDC00FBFC59 /* MakeathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B980FDF620144EDC00FBFC59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Bryan Cooper";
+				TargetAttributes = {
+					B980FDFD20144EDC00FBFC59 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					B980FE1120144EDC00FBFC59 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B980FDFD20144EDC00FBFC59;
+					};
+					B980FE1C20144EDC00FBFC59 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B980FDFD20144EDC00FBFC59;
+					};
+				};
+			};
+			buildConfigurationList = B980FDF920144EDC00FBFC59 /* Build configuration list for PBXProject "Makeathon" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B980FDF520144EDC00FBFC59;
+			productRefGroup = B980FDFF20144EDC00FBFC59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B980FDFD20144EDC00FBFC59 /* Makeathon */,
+				B980FE1120144EDC00FBFC59 /* MakeathonTests */,
+				B980FE1C20144EDC00FBFC59 /* MakeathonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B980FDFC20144EDC00FBFC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B980FE0C20144EDC00FBFC59 /* LaunchScreen.storyboard in Resources */,
+				B980FE352014F1D200FBFC59 /* GoogleService-Info.plist in Resources */,
+				B980FE0920144EDC00FBFC59 /* Assets.xcassets in Resources */,
+				B980FE0720144EDC00FBFC59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B980FE1020144EDC00FBFC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B980FE1B20144EDC00FBFC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42370E3FFF518514D9145107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Makeathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F83ACD33A8F40ED8AD8F6AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakeathonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760F48E3DC033C19B3445F48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Makeathon/Pods-Makeathon-frameworks.sh",
+				"${PODS_ROOT}/EstimoteBluetoothScanning/EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework",
+				"${PODS_ROOT}/EstimoteProximitySDK/EstimoteProximitySDK/EstimoteProximitySDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EstimoteBluetoothScanning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EstimoteProximitySDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makeathon/Pods-Makeathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CF4DE96741DB1FDBC992C9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakeathonTests/Pods-MakeathonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E488FB9A51DC5F23CAA1E82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakeathonUITests/Pods-MakeathonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A22E642C6D214AC6FD398C22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakeathonUITests/Pods-MakeathonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A31ECCE27A669B0ECA65D818 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MakeathonTests/Pods-MakeathonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B446D7DDA94968701EEC547C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakeathonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F331485DE9758D271EF4A2D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makeathon/Pods-Makeathon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B980FDFA20144EDC00FBFC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B980FE0420144EDC00FBFC59 /* ViewController.swift in Sources */,
+				B980FE0220144EDC00FBFC59 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B980FE0E20144EDC00FBFC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B980FE1720144EDC00FBFC59 /* MakeathonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B980FE1920144EDC00FBFC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B980FE2220144EDC00FBFC59 /* MakeathonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B980FE1420144EDC00FBFC59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B980FDFD20144EDC00FBFC59 /* Makeathon */;
+			targetProxy = B980FE1320144EDC00FBFC59 /* PBXContainerItemProxy */;
+		};
+		B980FE1F20144EDC00FBFC59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B980FDFD20144EDC00FBFC59 /* Makeathon */;
+			targetProxy = B980FE1E20144EDC00FBFC59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B980FE0520144EDC00FBFC59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B980FE0620144EDC00FBFC59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B980FE0A20144EDC00FBFC59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B980FE0B20144EDC00FBFC59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B980FE2420144EDC00FBFC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B980FE2520144EDC00FBFC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B980FE2720144EDC00FBFC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD04D4595F129DBB792AC00 /* Pods-Makeathon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AF9EJM6PQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/EstimoteSDK/EstimoteSDK",
+				);
+				INFOPLIST_FILE = Makeathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rootmanagementllc.Makeathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Makeathon/Makeathon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B980FE2820144EDC00FBFC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A988D9C7424A256B33A77C /* Pods-Makeathon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AF9EJM6PQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/EstimoteSDK/EstimoteSDK",
+				);
+				INFOPLIST_FILE = Makeathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rootmanagementllc.Makeathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Makeathon/Makeathon-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B980FE2A20144EDC00FBFC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932C557E39ED769440C520D2 /* Pods-MakeathonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AF9EJM6PQ;
+				INFOPLIST_FILE = MakeathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rootmanagementllc.MakeathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeathon.app/Makeathon";
+			};
+			name = Debug;
+		};
+		B980FE2B20144EDC00FBFC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582EE9B21071CEC080825B8C /* Pods-MakeathonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AF9EJM6PQ;
+				INFOPLIST_FILE = MakeathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rootmanagementllc.MakeathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeathon.app/Makeathon";
+			};
+			name = Release;
+		};
+		B980FE2D20144EDC00FBFC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78685E2C780D54E4D670C99 /* Pods-MakeathonUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AF9EJM6PQ;
+				INFOPLIST_FILE = MakeathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rootmanagementllc.MakeathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Makeathon;
+			};
+			name = Debug;
+		};
+		B980FE2E20144EDC00FBFC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA43E0BB49AA505A281ADFA /* Pods-MakeathonUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AF9EJM6PQ;
+				INFOPLIST_FILE = MakeathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rootmanagementllc.MakeathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Makeathon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B980FDF920144EDC00FBFC59 /* Build configuration list for PBXProject "Makeathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B980FE2420144EDC00FBFC59 /* Debug */,
+				B980FE2520144EDC00FBFC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B980FE2620144EDC00FBFC59 /* Build configuration list for PBXNativeTarget "Makeathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B980FE2720144EDC00FBFC59 /* Debug */,
+				B980FE2820144EDC00FBFC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B980FE2920144EDC00FBFC59 /* Build configuration list for PBXNativeTarget "MakeathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B980FE2A20144EDC00FBFC59 /* Debug */,
+				B980FE2B20144EDC00FBFC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B980FE2C20144EDC00FBFC59 /* Build configuration list for PBXNativeTarget "MakeathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B980FE2D20144EDC00FBFC59 /* Debug */,
+				B980FE2E20144EDC00FBFC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B980FDF620144EDC00FBFC59 /* Project object */;
+}

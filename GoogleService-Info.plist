@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>268256732237-tb67ddp5gvv6fi1u1gubcgtquic3fj2g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.268256732237-tb67ddp5gvv6fi1u1gubcgtquic3fj2g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBbKMOxFfl6k3JRYG9jTcWtqvfPqS7cOlw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>268256732237</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>rootmanagementllc.Makeathon</string>
+	<key>PROJECT_ID</key>
+	<string>makeathon-2018</string>
+	<key>STORAGE_BUCKET</key>
+	<string>makeathon-2018.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:268256732237:ios:6a95f33e5f82e0ca</string>
+	<key>DATABASE_URL</key>
+	<string>https://makeathon-2018.firebaseio.com</string>
+</dict>
+</plist>
