@@ -13,7 +13,7 @@ import EstimoteProximitySDK
 
 //The ViewController class is a single page instance that handles user events
 //when entering/leaving the area and then update the client's view and database accordingly.
-class ViewController: UIViewController{
+class ViewController: UIViewController {
 
     //Reference to the firebase database
     var ref: DatabaseReference?
@@ -57,7 +57,7 @@ class ViewController: UIViewController{
             print("Ooops! \(error)")
         })
         
-        let purpleZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 0.5)!,
+        let purpleZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.0)!,
                                              attachmentKey: "desk",
                                              attachmentValue: "blueberry")
         
@@ -72,7 +72,7 @@ class ViewController: UIViewController{
             self.purpleLabel.textColor = self.blueberryColor
         }
         
-        let greenZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 0.5)!,
+        let greenZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.0)!,
                                         attachmentKey: "desk",
                                         attachmentValue: "mint")
         greenZone.onEnterAction = { attachment in
@@ -86,18 +86,18 @@ class ViewController: UIViewController{
             self.greenLabel.textColor = self.mintColor
         }
         
-        let blueZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 0.5)!,
+        let blueZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.0)!,
                                          attachmentKey: "desk",
                                          attachmentValue: "ice")
         blueZone.onEnterAction = { attachment in
             print("Enter blue (close range)")
-            self.greenLabel.backgroundColor = self.iceColor
-            self.greenLabel.textColor = UIColor.white
+            self.blueLabel.backgroundColor = self.iceColor
+            self.blueLabel.textColor = UIColor.white
         }
         blueZone.onExitAction = { attachment in
             print("Exit blue (close range)")
-            self.greenLabel.backgroundColor = UIColor.white
-            self.greenLabel.textColor = self.iceColor
+            self.blueLabel.backgroundColor = UIColor.white
+            self.blueLabel.textColor = self.iceColor
         }
         
         //Used to log proximity beacons in close range
@@ -141,26 +141,22 @@ class ViewController: UIViewController{
     //Conduct the inital setup for the UI elements representing the beacons
     func labelSetup() {
         self.namePrompt.layer.borderWidth = 2.0
-        self.namePrompt.layer.borderColor = self.mintColor
         self.namePrompt.layer.cornerRadius = 8
         self.namePrompt.layer.masksToBounds = true
         
         self.purpleLabel.layer.borderWidth = 2.0
-        self.purpleLabel.layer.borderColor = self.blueberryColor
         self.purpleLabel.layer.cornerRadius = 10
         self.purpleLabel.layer.masksToBounds = true
         self.purpleLabel.textColor = self.blueberryColor
         self.purpleLabel.backgroundColor = UIColor.white
         
         self.blueLabel.layer.borderWidth = 2.0
-        self.blueLabel.layer.borderColor = self.iceColor
         self.blueLabel.layer.cornerRadius = 10
         self.blueLabel.layer.masksToBounds = true
         self.blueLabel.textColor = self.iceColor
         self.blueLabel.backgroundColor = UIColor.white
         
         self.greenLabel.layer.borderWidth = 2.0
-        self.greenLabel.layer.borderColor = self.mintColor
         self.greenLabel.layer.cornerRadius = 10
         self.greenLabel.layer.masksToBounds = true
         self.greenLabel.textColor = self.mintColor
