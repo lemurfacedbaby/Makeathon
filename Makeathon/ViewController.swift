@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var ref: DatabaseReference?
     
     //UI element for the text prompt
-    @IBOutlet weak var namePrompt: UILabel!
+    @IBOutlet weak var rangePrompt: UILabel!
 
     //UI element representing the green beacon named 'mint'
     @IBOutlet weak var greenLabel: UILabel!
@@ -49,7 +49,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         FirebaseApp.configure()
         ref = Database.database().reference()
-
+        let purpleRef = ref!.child(byAppendingPath : "purplebeacon")
+        let blueRef = ref!.child(byAppendingPath :"bluebeacon")
+        let greenRef = ref!.child(byAppendingPath: "greenbeacon")
         labelSetup()
 
         let credentials = EPXCloudCredentials(appID: "makeathon-ccm", appToken: "4e3f2e89fba814ec55602771970a81a2")
@@ -57,7 +59,7 @@ class ViewController: UIViewController {
             print("Ooops! \(error)")
         })
         
-        let purpleZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.0)!,
+        let purpleZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.5)!,
                                              attachmentKey: "desk",
                                              attachmentValue: "blueberry")
         
@@ -65,72 +67,66 @@ class ViewController: UIViewController {
             print("Enter purple (close range)")
             self.purpleLabel.backgroundColor = self.blueberryColor
             self.purpleLabel.textColor = UIColor.white
+            purpleRef.setValue(1)
         }
         purpleZone.onExitAction = { attachment in
             print("Exit purple (close range)")
             self.purpleLabel.backgroundColor = UIColor.white
             self.purpleLabel.textColor = self.blueberryColor
+            purpleRef.setValue(0)
         }
         
-        let greenZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.0)!,
+        let greenZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.5)!,
                                         attachmentKey: "desk",
                                         attachmentValue: "mint")
         greenZone.onEnterAction = { attachment in
             print("Enter green (close range)")
             self.greenLabel.backgroundColor = self.mintColor
             self.greenLabel.textColor = UIColor.white
+            greenRef.setValue(1)
         }
         greenZone.onExitAction = { attachment in
             print("Exit green (close range)")
             self.greenLabel.backgroundColor = UIColor.white
             self.greenLabel.textColor = self.mintColor
+            greenRef.setValue(0)
         }
         
-        let blueZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.0)!,
+        let blueZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.5)!,
                                          attachmentKey: "desk",
                                          attachmentValue: "ice")
         blueZone.onEnterAction = { attachment in
             print("Enter blue (close range)")
             self.blueLabel.backgroundColor = self.iceColor
             self.blueLabel.textColor = UIColor.white
+            blueRef.setValue(1)
         }
         blueZone.onExitAction = { attachment in
             print("Exit blue (close range)")
             self.blueLabel.backgroundColor = UIColor.white
             self.blueLabel.textColor = self.iceColor
+            blueRef.setValue(0)
         }
         
-        //Used to log proximity beacons in close range
-        /*let closeVenueZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 0.5)!,
-                                              attachmentKey: "venue",
-                                              attachmentValue: "office")
-        closeVenueZone.onChangeAction = { attachmentsInside in
-            print("Currently, there are \(attachmentsInside.count) attachments in close range:")
-            print("\(attachmentsInside.map({ $0.payload.description }).joined(separator: "\n"))")
-            print("")
-        }*/
-        
-        //Used to log proximity beacons in mid range
-        /*let midVenueZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.5)!,
-                                            attachmentKey: "venue",
-                                            attachmentValue: "office")
-        midVenueZone.onEnterAction = { attachment in
-            print("Enter venue (mid range)")
-            self.venueLabel.backgroundColor = self.venueColor
-            self.venueLabel.textColor = UIColor.white
+        let demoZone = EPXProximityZone(range: EPXProximityRange.custom(desiredMeanTriggerDistance: 1.5)!,
+                                        attachmentKey: "venue",
+                                        attachmentValue: "office")
+        demoZone.onEnterAction = { attachment in
+            print("Enter demo (close range)")
+            self.rangePrompt.backgroundColor = UIColor.red
+            self.rangePrompt.textColor = UIColor.white
+            self.rangePrompt.text = "Go Pack!"
         }
-        midVenueZone.onExitAction = { attachment in
-            print("Exit venue (mid range)")
-            self.venueLabel.backgroundColor = UIColor.white
-            self.venueLabel.textColor = self.venueColor
+        demoZone.onExitAction = { attachment in
+            print("Exit demo (close range)")
+            self.rangePrompt.backgroundColor = UIColor.white
+            self.rangePrompt.textColor = UIColor.red
+            self.rangePrompt.text = "Out of Range"
         }
-        midVenueZone.onChangeAction = { attachmentsInside in
-            print("Currently, there are \(attachmentsInside.count) attachments in mid range:")
-            print("\(attachmentsInside.map({ $0.payload.description }).joined(separator: "\n"))")
-            print("")
-        }*/
         
-        self.proximityObserver.startObserving([greenZone, purpleZone, blueZone])
+        
+        
+        self.proximityObserver.startObserving([greenZone, purpleZone, blueZone, demoZone])
     }
 
     override func didReceiveMemoryWarning() {
@@ -140,9 +136,9 @@ class ViewController: UIViewController {
 
     //Conduct the inital setup for the UI elements representing the beacons
     func labelSetup() {
-        self.namePrompt.layer.borderWidth = 2.0
-        self.namePrompt.layer.cornerRadius = 8
-        self.namePrompt.layer.masksToBounds = true
+        self.rangePrompt.layer.borderWidth = 2.0
+        self.rangePrompt.layer.cornerRadius = 8
+        self.rangePrompt.layer.masksToBounds = true
         
         self.purpleLabel.layer.borderWidth = 2.0
         self.purpleLabel.layer.cornerRadius = 10

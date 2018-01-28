@@ -13,8 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
 
     var window: UIWindow?
 
-    //var monitoringManager: ESTMonitoringV2Manager!
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         return true
     }
